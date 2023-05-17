@@ -16,6 +16,9 @@ import 'tipcalculator.dart';
 import 'GradeCalculator.dart';
 import 'CelsiustoKelvinConverter.dart';
 import 'iosguessgame.dart';
+import 'algorithms.dart';
+import 'loanCalculator.dart';
+import 'finalReview.dart';
 
 
 void main() {
@@ -101,6 +104,13 @@ class MyApp extends StatelessWidget {
         '/GradeCalculator': (context)=> GradeCalculator(),
         '/CelsiustoKelvinConverter': (context)=> CelsiustoKelvinConverter(),
         '/iosguessgame': (context)=> iosguessgame(),
+        '/Algorithms': (context)=> Algorithms(),
+        '/loanCalculator': (context)=> loanCalculator(),
+        '/finalReview': (context)=> finalReview(),
+
+
+
+
 
       },
 
@@ -169,16 +179,26 @@ class _MyHomePageState extends State<MyHomePage> {
                   CollegeButton(Collegename: 'test1review',College: '/test1review',bgcolor: Color(0xffFDF9D8),forecolor: Color(0xff841617)),
                   CollegeButton(Collegename: 'testreview1b',College: '/testreview1b',bgcolor: Color(0xFF0033a1),forecolor: Color(0xffFDF9D8)),
                   CollegeButton(Collegename: 'testreview2h',College: '/testreview2h',bgcolor: Color(0xFF9C27B0),forecolor: Color(0xffFDF9D8)),
+                  CollegeButton(Collegename: 'finalReview',College: '/finalReview',bgcolor: Color(0xFF9C27B0),forecolor: Color(0xffFDF9D8)),
+
+
+
+                ],),
+
+              Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+
+
                   CollegeButton(Collegename: 'testreview2k',College: '/testreview2k',bgcolor: Color(0xFFFF9722),forecolor: Color(0xffFDF9D8)),
                   CollegeButton(Collegename: 'tipcalculator',College: '/tipcalculator',bgcolor: Color(0xFFFF9722),forecolor: Color(0xff841617)),
                   CollegeButton(Collegename: 'GradeCalculator',College: '/GradeCalculator',bgcolor: Color(0xffFDF9D8),forecolor: Color(0xFF9C27B0)),
                   CollegeButton(Collegename: 'CelsiustoKelvinConverter',College: '/CelsiustoKelvinConverter',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
                   CollegeButton(Collegename: 'iosguessgame',College: '/iosguessgame',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
+                  CollegeButton(Collegename: 'Algorithms',College: '/Algorithms',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
+                  CollegeButton(Collegename: 'loanCalculator',College: '/loanCalculator',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
 
 
-                ],),
-
-
+                ],)
 
             ]
         ),
