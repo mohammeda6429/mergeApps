@@ -19,6 +19,7 @@ import 'iosguessgame.dart';
 import 'algorithms.dart';
 import 'loanCalculator.dart';
 import 'finalReview.dart';
+import 'ios_gallery.dart';
 
 
 void main() {
@@ -107,6 +108,8 @@ class MyApp extends StatelessWidget {
         '/Algorithms': (context)=> Algorithms(),
         '/loanCalculator': (context)=> loanCalculator(),
         '/finalReview': (context)=> finalReview(),
+        '/gallery': (context)=> gallery()
+
 
 
 
@@ -196,6 +199,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   CollegeButton(Collegename: 'iosguessgame',College: '/iosguessgame',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
                   CollegeButton(Collegename: 'Algorithms',College: '/Algorithms',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
                   CollegeButton(Collegename: 'loanCalculator',College: '/loanCalculator',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
+                  CollegeButton(Collegename: 'gallery',College: '/gallery',bgcolor: Color(0xff841617),forecolor: Color(0xffFDF9D8)),
+
 
 
                 ],)
